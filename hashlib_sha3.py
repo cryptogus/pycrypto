@@ -2,7 +2,7 @@ import hashlib
 
 def hash_func(data):
     # hashlib 모듈을 사용하여 해시 객체를 생성합니다.
-    hash_object = hashlib.sha3_256()
+    hash_object = hashlib.sha3_256() # hash_object = hashlib.sha3_256(data.encode('utf-8')) 이렇게도 사용가능, 이러면 update해줄 필요 X
 
     # 데이터를 바이트로 변환하여 해시 객체에 업데이트합니다.
     hash_object.update(data.encode('utf-8'))
