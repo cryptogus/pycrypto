@@ -70,7 +70,7 @@ if __name__ == "__main__":
     secret2 = 127.0430941 # Longitude
     num_shares = 5    # Number of shares to generate
     threshold = 4     # Number of shares required to reconstruct the secret
-    precision = 8     # Turns a secret into an integer, but smaller than prime
+    precision = 8     # Turns a secret into an integer, but smaller than prime (float 자료형을 정수로 바꿔준 후 복구할 때 다시 float형으로)
 
     shares1 = split_secret(secret1, num_shares, threshold, prime, precision) # Create shares
     print("Shares:", shares1)
